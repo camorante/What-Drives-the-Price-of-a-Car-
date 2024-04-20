@@ -12,6 +12,12 @@ The data can be found in this repository.
 
 [Vehicles.csv](https://github.com/camorante/What-Drives-the-Price-of-a-Car-/blob/main/data/vehicles.csv)
 
+#### Notebook Link ####
+
+The following notebook contains all the development of the analysis carried out.
+
+[prompt_II.ipynb](https://github.com/camorante/What-Drives-the-Price-of-a-Car-/blob/main/prompt_II.ipynb)
+
 ### Business Understanding: ###
 
 In the following lines we are going to analyze the dataset data in order to define the quality of the data and verify that we need to be able to use it reliably in a complete model.
