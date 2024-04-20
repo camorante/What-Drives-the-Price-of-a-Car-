@@ -113,4 +113,30 @@ For the training I used 4 different models in order to find the most optimal one
 * Ridge with Polynomial
 * Lasso, SequentialFeatureSelector with Polynomial
 
+<ins>Real vs Predictions</ins>
+
 ![](images/fig6.png)
+
+### Evaluation: ###
+
+We proceed to evaluate our model to verify if it is really good at making predictions.
+
+I have two types of results, one with my target variable normalized with the np.log function and one without converting.
+
+<ins>With Linear Data</ins>
+
+![](images/fig7a.png)
+![](images/fig7b.png)
+![](images/fig7c.png)
+
+<ins>With Non-Linear Transformation</ins>
+
+![](images/fig8a.png)
+![](images/fig8b.png)
+![](images/fig8c.png)
+
+I used MSE and R2 as I am more interested in penalizing large errors in my model in order for my metric to reflect the true accuracy of my model.
+For this search I tried using a logarithmic and non-logarithmic target variable and obtained the following results:
+
+'Simple Linear Regression with Polynomial' and 'Ridge with Polynomial' were the best scoring models followed by the 'Simple Linear Regression' model and 'Lasso' in last place. All these calculations were done for both logarithmic and non-logarithmic target variables. The interesting thing about the results is that my error was much lower using a non-logarithmic target variable.
+
