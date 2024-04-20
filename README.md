@@ -119,6 +119,8 @@ For the training I used 4 different models in order to find the most optimal one
 
 ### Evaluation: ###
 
+#### Error Evaluation: ####
+
 We proceed to evaluate our model to verify if it is really good at making predictions.
 
 I have two types of results, one with my target variable normalized with the np.log function and one without converting.
@@ -138,5 +140,48 @@ I have two types of results, one with my target variable normalized with the np.
 I used MSE and R2 as I am more interested in penalizing large errors in my model in order for my metric to reflect the true accuracy of my model.
 For this search I tried using a logarithmic and non-logarithmic target variable and obtained the following results:
 
-'Simple Linear Regression with Polynomial' and 'Ridge with Polynomial' were the best scoring models followed by the 'Simple Linear Regression' model and 'Lasso' in last place. All these calculations were done for both logarithmic and non-logarithmic target variables. The interesting thing about the results is that my error was much lower using a non-logarithmic target variable.
+'Simple Linear Regression with Polynomial' and 'Ridge with Polynomial' were the best scoring models followed by the 'Simple Linear Regression' model and 'Lasso' in last place. All these calculations were done for both logarithmic and non-logarithmic target variables. The interesting thing about the results is that my error was much lower using a non-logarithmic target variable, This suggests that my model with unconverted target variable is better at predicting on unseen data.
 
+#### Feature Weight: ####
+
+Here we look for which characteristics have a considerable weight in the price calculation, for that we will use permutation importance
+
+<ins>Features Importances</ins>
+
+![](images/fig9.png)
+
+<ins>Coefficients</ins>
+
+![](images/fig10.png)
+
+In the search for weights for each of the characteristics I found that the year, model, odometer, transmission and cylinders of the vehicle have a very large influence on the prediction of the values, while the color, size and condition are not so decisive when calculating the price of the vehicles. In addition, we can see that the coefficients of a model with one of the best scores  (Ridge with Polynomial) have marked extremes where the year and model and the combination of year-odometer and year-cylinders predominate, giving us an indication of the weight that these characteristics have at the time of predicting the price.
+
+### Deployment: ###
+
+#### Client Report: ####
+
+Dear client, thank you for hiring my services, in my quest to improve the services you offer I would like to give you a report that shows how you could improve your sales and allow you to increase your profits. 
+
+For this I will start a detailed analysis analyzing the most important variables so you know how to improve your business.
+
+First of all, in my analysis I found that features such as year, model, odometer, cylinders and transmission are very important when pricing your vehicles, so I will show you which are the best features for your business and knowing them you can make good decisions for the future. This is valuable piece of information I would like you to keep in mind.
+
+Second, the analysis and results presented are a guide and at no time are they an absolute truth, my intention is that these numbers serve as a guide in the best decisions for your business.
+
+<ins>Average Car Price by Year</ins>
+
+![](images/fig11.png)
+
+Let's start with the year and the average price of each of the years analyzed, as you can see the cars between the years 1900 and 1970 (omitting the war period of the second world war and 5 years after) tend to have quite high prices compared to subsequent years, especially the years 1900 and 1933, I recommend you to negotiate with that kind of cars. For the years between 2011 onwards there is also an interesting price increase, but mostly it is due to the fact that these cars increase in price because they have a lower odometer the newer the vehicle is.
+
+<ins>Average Car Price by Model</ins>
+
+In this chart I show you the top 15 models of vehicles that have the highest average price, among these we find Audi's Q8 or BMW's M4, also trucks like the Ford f-150 and GMC's Sierra 1500. The first vehicles on the list are high-end vehicles that have high prices so they may not have as fast an exit as vehicles with more affordable prices.
+
+![](images/fig12.png)
+
+<ins>Average Car Price by Manufacturer</ins>
+
+The average selling price by brand can be seen in this graph, as you can see the highest prices correspond to high-end vehicles such as Tesla, Jaguar, Porsche and others, while the most economical vehicles belong to brands such as Kia, Hyundai, Honda and others. This graph will allow you to have a higher vision of which vehicles to sell in case you specialize in the high, medium or low range segment.
+
+![](images/fig13.png)
