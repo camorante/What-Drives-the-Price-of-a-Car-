@@ -12,7 +12,7 @@ The data can be found in this repository.
 
 [Vehicles.csv](https://github.com/camorante/What-Drives-the-Price-of-a-Car-/blob/main/data/vehicles.csv)
 
-#### Notebook Link ####
+### Notebook Link ###
 
 The following notebook contains all the development of the analysis carried out.
 
