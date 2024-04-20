@@ -72,7 +72,7 @@ As we can see our target variable is somewhat skewed so we will proceed to apply
 
 Once we have identified the problems in the dataset we proceed to correct them in order to have good quality data.
 
-### Cleaning: ###
+#### Cleaning: ####
 
 Many data were imputed with the most frequent value. In the case of the odometer it is possible to use an average to fill in null values. 
 
@@ -82,7 +82,7 @@ Outliers with very high values were removed using the zscore method and maximum 
 
 With respect to the model features, within the dataset there are many categories that have names with unnecessarily long texts, what was done was to cut those names in order to reduce the number of similar categories, for them if a category had one or two words it was left as it was, but if it had more than two only the first two words were left. In addition, categories with a count of less than 50 records were removed.
 
-### Correlations: ###
+#### Correlations: ####
 
 <ins>Correlations HeatMap</ins>
 
@@ -91,3 +91,14 @@ With respect to the model features, within the dataset there are many categories
 <ins>Correlations Pair Plot</ins>
 
 ![](images/fig4.png)
+
+<ins>Price Correlations</ins>
+
+![](images/fig4.png)
+
+As we can see there are several correlations between features that are very striking among them:
+
+* The positive correlation between price and model is quite high indicating that a change in model is highly correlated with a change in price.
+* The negative correlation between odometer and price indicates that the price goes down if the odometer is very high and vice versa, which is somewhat natural since it is an indication that the more the III. vehicle has been driven, the lower its value.
+* There is a negative correlation between the odometer and the transmission, indicating that with a higher odometer the transmission will have more use and therefore its value and contribution to the cost of V. the vehicle has to go down.
+* There is a positive correlation between region and state, since both are locations, it is natural to find such a relationship.
