@@ -94,11 +94,23 @@ With respect to the model features, within the dataset there are many categories
 
 <ins>Price Correlations</ins>
 
-![](images/fig4.png)
+![](images/fig5.png)
 
 As we can see there are several correlations between features that are very striking among them:
 
 * The positive correlation between price and model is quite high indicating that a change in model is highly correlated with a change in price.
-* The negative correlation between odometer and price indicates that the price goes down if the odometer is very high and vice versa, which is somewhat natural since it is an indication that the more the III. vehicle has been driven, the lower its value.
-* There is a negative correlation between the odometer and the transmission, indicating that with a higher odometer the transmission will have more use and therefore its value and contribution to the cost of V. the vehicle has to go down.
+* The negative correlation between odometer and price indicates that the price goes down if the odometer is very high and vice versa, which is somewhat natural since it is an indication that the more the vehicle has been driven, the lower its value.
+* There is a negative correlation between the odometer and the transmission, indicating that with a higher odometer the transmission will have more use and therefore its value and contribution to the cost of the vehicle has to go down.
 * There is a positive correlation between region and state, since both are locations, it is natural to find such a relationship.
+
+### Modeling: ###
+
+Once we have our data ready, we proceed to search for the best model, using Ridge, Lasso, LinearRegression and GridSearch to find the best possible model. I will use k-fold Cross validation.
+
+For the training I used 4 different models in order to find the most optimal one:
+* Simple Linear Regression
+* Simple Linear Regression with Polynomial
+* Ridge with Polynomial
+* Lasso, SequentialFeatureSelector with Polynomial
+
+![](images/fig6.png)
