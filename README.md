@@ -1,4 +1,4 @@
-# What-Drives-the-Price-of-a-Car-
+# What Drives the Price of a Car
 
 ### Overview: ###
 
@@ -16,15 +16,15 @@ The data can be found in this repository.
 
 In the following lines we are going to analyze the dataset data in order to define the quality of the data and verify that we need to be able to use it reliably in a complete model.
 
-Features Null Percentage
+<ins>Features Null Percentage</ins>
 
 ![](images/fig1.png)
 
-Target Variable Logarithm
+<ins>Target Variable Logarithm</ins>
 
 ![](images/fig2.png)
 
-## Findings: ##
+#### Findings: ####
 
 1. Many of the numeric columns can be replaced with an average (such as the year) and some of the categorical columns, such as transmission, can be replaced with the most frequent value, below is a column by column analysis.
 
