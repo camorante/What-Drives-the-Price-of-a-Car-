@@ -185,3 +185,36 @@ In this chart I show you the top 15 models of vehicles that have the highest ave
 The average selling price by brand can be seen in this graph, as you can see the highest prices correspond to high-end vehicles such as Tesla, Jaguar, Porsche and others, while the most economical vehicles belong to brands such as Kia, Hyundai, Honda and others. This graph will allow you to have a higher vision of which vehicles to sell in case you specialize in the high, medium or low range segment.
 
 ![](images/fig13.png)
+
+<ins>Average Car Price by Transmission</ins>
+
+Manual transmissions are usually cheaper than automatic transmissions, here you can see the average selling price of a vehicle with automatic vs. manual transmission. Automatic transmissions have a higher price per vehicle due to their greater complexity, so this chart will help you decide if it is more profitable to sell vehicles with manual or automatic transmissions, or a balance of both.
+
+![](images/fig14.png)
+
+<ins>Average Car Price by Odometer Range</ins>
+
+The odometer section is interesting because as you know the more mileage a vehicle has the more it tends to devalue, unless they are classic cars which we were able to check the prices in a previous graph.  In general, the more mileage a vehicle has the lower its selling price, with the exception of some classic cars. As you can see, the most expensive vehicles are the 0 mileage vehicles.
+
+![](images/fig15.png)
+
+<ins>Average Car Price by Cylinders</ins>
+
+Vehicles with 8 cylinders tend to have a higher average price than the others, they are likely to be more desirable because of their power-consumption ratio, so as demand increases, the price is likely to rise. 
+
+![](images/fig16.png)
+
+<ins>Average Car Price by State</ins>
+
+Finally I would like to show you a graph with the average selling price in each of the states of the USA (it is not a feature with great influence on the price of the vehicle but it is interesting), it is an interesting data because it can be a determining factor when investing and creating a new business and this information will help you to decide the place where you could start a new business or headquarters. 
+
+West Virginia stands out as the state with the highest sales prices and Rhode Island has the lowest average prices. Deciding on one or the other depends on many factors and not only the price, but you should also include taxes, salaries and fixed costs, but this will give you a small glimpse of what is going on and allow you to make valuable decisions.
+
+![](images/fig17.png)
+
+#### Conclusions: ####
+
+1. The year of manufacture of the vehicle is very influential in the prediction of the price, the model also presents the same behavior.
+2. The odometer is diametrically opposed to the price, the more distance traveled, the lower the value of the vehicle, with the exception of classic cars.
+3. In spite of what it may seem the color of the vehicle, the condition and the size does not influence the price prediction as much.
+4. There are some states where prices are higher, this is probably due to several factors such as taxes, salaries, preference for certain brands among others.
