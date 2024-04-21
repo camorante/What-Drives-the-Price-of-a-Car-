@@ -18,7 +18,16 @@ The following notebook contains all the development of the analysis carried out.
 
 [prompt_II.ipynb](https://github.com/camorante/What-Drives-the-Price-of-a-Car-/blob/main/prompt_II.ipynb)
 
-### Business Understanding: ###
+### Business Understanding ###
+
+Given a quantity of data (426000 records) with information on the variables of a vehicle (cylinders, odometer, model, etc.) and given the selling price of the vehicle, we will determine, using the appropriate tools(k-means, linear regression, etc), which features (phi) have the most weight at the time of predicting the values. For this task we have several tools that allow us to glimpse more clearly the objective we are looking for.
+
+The objectives are as follows:
+
+    * Find the features(phi) that most influence price.</li>
+    * To find the best model to predict the price of vehicles.</li>
+
+### Data Preparation ###
 
 In the following lines we are going to analyze the dataset data in order to define the quality of the data and verify that we need to be able to use it reliably in a complete model.
 
@@ -74,7 +83,7 @@ There are some records that are not really worth saving and they are all those t
 
 As we can see our target variable is somewhat skewed so we will proceed to apply a logarithmic transformation method later on if required.
 
-### Data Preparation: ###
+### Data Preparation ###
 
 Once we have identified the problems in the dataset we proceed to correct them in order to have good quality data.
 
@@ -109,7 +118,7 @@ As we can see there are several correlations between features that are very stri
 * There is a negative correlation between the odometer and the transmission, indicating that with a higher odometer the transmission will have more use and therefore its value and contribution to the cost of the vehicle has to go down.
 * There is a positive correlation between region and state, since both are locations, it is natural to find such a relationship.
 
-### Modeling: ###
+### Modeling ###
 
 Once we have our data ready, we proceed to search for the best model, using Ridge, Lasso, LinearRegression and GridSearch to find the best possible model. I will use k-fold Cross validation.
 
@@ -123,7 +132,7 @@ For the training I used 4 different models in order to find the most optimal one
 
 ![](images/fig6.png)
 
-### Evaluation: ###
+### Evaluation ###
 
 #### Error Evaluation: ####
 
@@ -162,7 +171,7 @@ Here we look for which characteristics have a considerable weight in the price c
 
 In the search for weights for each of the characteristics I found that the year, model, odometer, transmission and cylinders of the vehicle have a very large influence on the prediction of the values, while the color, size and condition are not so decisive when calculating the price of the vehicles. In addition, we can see that the coefficients of a model with one of the best scores  (Ridge with Polynomial) have marked extremes where the year and model and the combination of year-odometer and year-cylinders predominate, giving us an indication of the weight that these characteristics have at the time of predicting the price.
 
-### Deployment: ###
+### Deployment ###
 
 #### Client Report: ####
 
