@@ -24,8 +24,8 @@ Given a quantity of data (426000 records) with information on the variables of a
 
 The objectives are as follows:
 
-    * Find the features(phi) that most influence price.</li>
-    * To find the best model to predict the price of vehicles.</li>
+* Find the features(phi) that most influence price.</li>
+* To find the best model to predict the price of vehicles.</li>
 
 ### Data Preparation ###
 
@@ -103,7 +103,7 @@ With respect to the model features, within the dataset there are many categories
 
 ![](images/fig3.png)
 
-<ins>Correlations Pair Plot</ins>
+<ins>Correlations Pair Plot (Most interesting features)</ins>
 
 ![](images/fig4.png)
 
