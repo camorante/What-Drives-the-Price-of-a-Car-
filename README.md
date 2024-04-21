@@ -27,7 +27,7 @@ The objectives are as follows:
 * Find the features(phi) that most influence price.</li>
 * To find the best model to predict the price of vehicles.</li>
 
-### Data Preparation ###
+### Data Understanding ###
 
 In the following lines we are going to analyze the dataset data in order to define the quality of the data and verify that we need to be able to use it reliably in a complete model.
 
