@@ -234,7 +234,7 @@ West Virginia stands out as the state with the highest sales prices and Rhode Is
 3. In spite of what it may seem the color of the vehicle, the condition and the size does not influence the price prediction as much.
 4. There are some states where prices are higher, this is probably due to several factors such as taxes, salaries, preference for certain brands among others.
 
-#### Next Steps: ####
+### Next Steps: ###
 
 1. There are more algorithms not contemplated here that could give better results (neural networks), as a next step it would be interesting to apply them.
 2. It is possible to further analyze the data, such as verifying which of the manufacturers with the highest or lowest prices have which type of transmission or which type of cylinders, for example.
